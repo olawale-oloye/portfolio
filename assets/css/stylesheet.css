@@ -37,6 +37,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 1.5rem;
 }
 
 .nav--title {
@@ -44,15 +46,18 @@ nav {
 }
 
 .nav--icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
 }
 
 .nav--icons--list li {
-  padding: 0 0.3rem 0 0.3rem;
+  /* padding: 0 0.3rem 0 0.3rem; */
 }
 
 @media screen and (min-width: 375px) {
   .nav--title {
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
   }
 }
 
