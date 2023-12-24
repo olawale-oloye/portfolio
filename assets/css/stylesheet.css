@@ -1,0 +1,60 @@
+/* Global Declarations  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--mainBg);
+}
+:root {
+  /* Primary Colors */
+  --mainBg: #151515;
+  --txtUnderline: #4ee1a0;
+  --footerBg: #242424;
+  --subTxtColor: #d9d9d9;
+  --txtColor: #ffffff;
+  /* Secondary Colors */
+}
+
+/* Navigation  */
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.nav--title {
+  color: var(--txtColor);
+}
+
+.nav--icons {
+}
+
+.nav--icons--list li {
+  padding: 0 0.3rem 0 0.3rem;
+}
+
+@media screen and (min-width: 375px) {
+  .nav--title {
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
